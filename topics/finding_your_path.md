@@ -12,6 +12,8 @@ Go to meetups and surround yourself with other people building in the same stack
 Bring the project in and show your office. Continuously voice your interest and desire to change stacks.
 The idea here is that, in doing so, you are showing your colleagues you are capable which will, in turn, eventually lead to your transition.
 
-    Please Note: Depending on how high the learning curve is on your current stack, level out on your current stack first before taking on this extra workload. Otherwise, you'll burn out. And we wouldn't want that now would we?
+    Please Note: Because of the generally high learning curve when working on a new stack,
+    level out your skills in your assigned stack first before taking on this extra workload.
+    Otherwise, you'll burn out. And we wouldn't want that now would we?
 
 Now that you're set on your stack, let's focus next on making you extremely productive, shall we?
