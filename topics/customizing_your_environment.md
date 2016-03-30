@@ -123,7 +123,6 @@ Here are some other great tools you could download to help manage your windows.
  - [SizeUp](http://www.irradiatedsoftware.com/sizeup/) is a great app that allows you to control the size of your windows as well as
    move them to other spaces with some simple, easy to remember, short keys.
 
-> Written with [StackEdit](https://stackedit.io/).
 
 **Conquer Your Text Editor**
 
