@@ -1,7 +1,6 @@
-Finding Your Path
+Focus on a Software Stack
 ---
 
-This article will guide you in finding your path.
 While considering your general career path (moving onto management or managing stacks) is good too, your focus this year should be on finding the stack that brings out the awesome in you.
 
 Chances are you'll have a stack picked out for you when you start (it's either embedded in the role or you're working for a multi-stack company and you'll be allocated by availability).
@@ -16,4 +15,4 @@ The idea here is that, in doing so, you are showing your colleagues you are capa
     level out your skills in your assigned stack first before taking on this extra workload.
     Otherwise, you'll burn out. And we wouldn't want that now would we?
 
-Now that you're set on your stack, let's focus next on making you extremely productive, shall we?
+Now that you're set on your stack, let's focus next on making you extremely [productive](customize_your_environment), shall we?
