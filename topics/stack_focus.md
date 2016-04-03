@@ -15,4 +15,4 @@ The idea here is that, in doing so, you are showing your colleagues you are capa
     level out your skills in your assigned stack first before taking on this extra workload.
     Otherwise, you'll burn out. And we wouldn't want that now would we?
 
-Now that you're set on your stack, let's focus next on making you extremely [productive](customize_your_environment), shall we?
+Now that you're set on your stack, let's focus next on making you extremely [productive](customize_your_environment.md), shall we?
