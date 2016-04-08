@@ -129,4 +129,3 @@ Here are the basic necessities that will aide in your productivity:
 There exists two configurable IDEs: Vim and EMacs. These two will require some investment of time to master and learn, but IT WILL PAY OFF. Click on the following links to learn how each of these work:
 
  - [Vim](editors/vim)
- - EMacs
