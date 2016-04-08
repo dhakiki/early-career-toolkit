@@ -48,14 +48,6 @@ function gacp
   git push
 end
 
-#todo: not even sure what this does i got it from kevin's fish config
-
-function fish_user_key_bindings
-  bind \cv backward-kill-word
-  bind \cb backward-word
-  bind \cg accept-autosuggestion
-end
-
 # here are some handy aliases
 
 abbr -a gp git push
@@ -93,7 +85,6 @@ end
 Here are some tools to help you review your changes prior to a commit:
 
  - [GitX](http://gitx.frim.nl/) is for GUI lovers like myself (Only for Mac!). You can `Enable Terminal Usage` once installed and simply type `gitx` in your command line to open the tool.
- - todo: Alex showed me a really cool one the other day. I should ask him for it
 
 **Bash Scripting 101**
 
@@ -134,11 +125,7 @@ Here are the basic necessities that will aide in your productivity:
  - File Name Text Search
  - Grep for String
  - Customizable Panels
- - (todo: im sure there's more.. what am i missing?)
 
 There exists two configurable IDEs: Vim and EMacs. These two will require some investment of time to master and learn, but IT WILL PAY OFF. Click on the following links to learn how each of these work:
 
  - [Vim](editors/vim)
- - EMacs
-
-To be continued.... (todo: transition to next page)

@@ -1,6 +1,18 @@
 doctype
 html
   head
-    link(rel="stylesheet" href="/main.css")
+    link(rel="stylesheet" href="css/main.css")
   body
-    != yield
+    .banner
+      .banner-header
+        h3 Early Career Toolkit
+      .banner-actions
+        a.banner-action.github(href="https://github.com/dhakiki/early-career-toolkit" target = "_blank")
+    .content-container
+      .content
+        != yield
+      .footer-container
+        .footer
+          div Copyright @ 2016
+          div The Early Career Toolkit is protected by the MIT license.
+          div All Rights Reserved
