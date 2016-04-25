@@ -1,7 +1,9 @@
 #!/bin/bash
 
+ls
 cd ../
-mkdir ../ectk-compiled
+ls
+mkdir ectk-compiled
 cp README.md website/
 cp topics/* website/topics/
 cd website/
@@ -15,7 +17,8 @@ rm -rf *
 cd ../../
 git checkout gh-pages
 rm -rf *
-mv ../ectk-compiled/* *
+mv ectk-compiled/* *
+rm -rf ectk-compiled/
 git add -A
 git commit -m "web version update"
 git push origin gh-pages
