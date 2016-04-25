@@ -2,8 +2,11 @@ doctype
 html
   head
     - var path = ''
-    - for(var i = 1; i < current.path.length - 1; i++)
-    -  path += '../'
+    - var gah = current.path.length
+    - for(var i = 1; i < current.path.length; i++)
+      -  path += '../'
+    script(src = path)
+    script(src = gah)
     link(rel="stylesheet" href= path + "css/main.css")
   body
     .banner
