@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cd ../
 mkdir ../ectk-compiled
 cp README.md website/
 cp topics/* website/topics/
