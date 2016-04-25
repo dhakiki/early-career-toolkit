@@ -1,7 +1,10 @@
 doctype
 html
   head
-    link(rel="stylesheet" href="css/main.css")
+    - var path = ''
+    - for(var i = 1; i < current.path.length; i++)
+    -  path += '../'
+    link(rel="stylesheet" href= path + "css/main.css")
   body
     .banner
       .banner-header
