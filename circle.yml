@@ -2,4 +2,4 @@ deployment:
   master:
     branch: master
     commands:
-      - ./scripts/deploy-web-version
+      - ./scripts/deploy-web-version.sh
