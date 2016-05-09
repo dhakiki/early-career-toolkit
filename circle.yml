@@ -15,4 +15,5 @@ deployment:
       - git config --global user.email "doreen.hakimi@gmail.com"
       - cp -f README.md src/index.md
       - cp -Rf content/* src/content/
+      - grep -rl '.md' src | xargs sed -i '' -e 's/.md//g'
       - npm run publish
