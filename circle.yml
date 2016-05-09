@@ -18,6 +18,7 @@ deployment:
       - git config --global user.name "CircleCI Deployment"
       - git config --global user.email "doreen.hakimi@gmail.com"
       - cp -f README.md src/index.md
+      - mkdir src/content
       - cp -Rf content/ src/content/
       - grep -rl '.md' src | xargs sed -i '' -e 's/.md//g'
       - npm run publish
