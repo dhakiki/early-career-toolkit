@@ -120,11 +120,3 @@ Customization
 To be continued..
 Talk about .vimrc and all the magic there
 Introduce Plugin managers and some basic really important ones to get the ball rolling.
-
-
-Macros
---
-To be continued..
-I wish I knew something about macros.
-
-
