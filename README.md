@@ -37,8 +37,8 @@ You'll be there in no time ^ time flies. But, lets jump back to the present and 
 
 This toolkit will cover the following topics:
 
- - [Focus on a Software Stack](content/stack_focus.md)
- - [Customize a Productive Coding Environment](content/customize_your_environment.md)
+ - [Focus on a Software Stack](content/stack_focus)
+ - [Customize a Productive Coding Environment](content/customize_your_environment)
  - Best Coding Practices
  - Mentorship Guide
 
