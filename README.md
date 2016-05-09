@@ -7,7 +7,7 @@ Pat yourself on the back! The year ahead will be one of immense growth and self-
 
 This repo serves to aide you in having a successful first year on the job.
 Having access to this knowledge will give you a helpful boost and will help you lean in and become the best engineer you can be.
-Many start their career (and often go through it) without gaining this information and their is a huge community of people around the
+Many start their career (and often go through it) without gaining this information and there is a huge community of people around the
 world who have acquired great tips they wish they had when they were starting out.
 
 Goals
@@ -37,8 +37,8 @@ You'll be there in no time ^ time flies. But, lets jump back to the present and 
 
 This toolkit will cover the following topics:
 
- - [Focus on a Software Stack](/topics/stack_focus.md)
- - [Customize a Productive Coding Environment](/topics/customize_your_environment.md)
+ - [Focus on a Software Stack](content/stack_focus.md)
+ - [Customize a Productive Coding Environment](content/customize_your_environment.md)
  - Best Coding Practices
  - Mentorship Guide
 

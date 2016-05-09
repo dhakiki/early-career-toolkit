@@ -1,5 +1,23 @@
+machine:
+  node:
+    version: 4.2.4
+
+general:
+  branches:
+    ignore:
+      - gh-pages
+
+test:
+  override:
+    - npm run compile
+
 deployment:
-  master:
+  publish:
     branch: master
     commands:
-      - ./scripts/deploy-web-version.sh
+      - git config --global user.name "CircleCI Deployment"
+      - git config --global user.email "doreen.hakimi@gmail.com"
+      - cp -f README.md src/index.md
+      - cp -Rf content/* src/content/
+      - grep -rl '.md' src | xargs sed -i '' -e 's/.md//g'
+      - npm run publish
