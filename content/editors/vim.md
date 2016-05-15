@@ -119,4 +119,4 @@ Customization
 
 To be continued..
 Talk about .vimrc and all the magic there
-Introduce Plugin managers and some basic really important ones to get the ball rolling.
+Introduce Plugin managers and some basic really important plugins.
