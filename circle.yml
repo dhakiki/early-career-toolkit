@@ -20,5 +20,5 @@ deployment:
       - cp -f README.md src/index.md
       - mkdir src/content
       - cp -Rf content/ src/content/
-      - grep -rl '.md' src | xargs sed -i '' -e 's/.md//g'
+      - grep -rl '.md' src/ | xargs sed -i '' -e 's/.md//g'
       - npm run publish
