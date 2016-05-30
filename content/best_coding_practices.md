@@ -77,6 +77,8 @@ These features are written in [Gherkin](https://cucumber.io/docs/reference), whi
 A good set of feature tests for this task would be:
 
 ```gherkin
+Feature: Configuration Settings
+
 Scenario: Viewing the Settings Options
   Given I am logged in
   When I select the settings option
@@ -106,6 +108,15 @@ Scenario: Configuring Privacy Settings to Friends Only
   When I select the "Friends Only" in the privacy dropdown
   And I click the button 'Save'
   Then new posts' privacy dropdown should be defaulted to "Friends Only"
+
+
+Scenario: Changing Name Tag to Existing Name Fails
+  Given I am logged In
+  And I select the settings option
+  And I click on the "Name Settings" link
+  When I enter the name "Boo" into the "name" field
+  And I click the button "Check Availability"
+  Then I see the error "Error. Name already Taken."
 
 ```
 
