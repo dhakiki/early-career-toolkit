@@ -9,7 +9,8 @@ To open a file in terminal using VIM, once you&#39;re in the directory of the fi
 you can enter <code>vim file_name.extension</code>. Woop! There it is.</p>
 <p>If straight Vim feels a little too daunting and you&#39;re not ready to part ways with your mouse quite yet, that&#39;s totally normal.</p>
 <p><a href="http://macvim-dev.github.io/macvim/">MacVim</a> is available for Mac Users.
-Once installed, to open MacVim from your directory in your terminal, simply enter <code>mvim</code> and a new window will show up. Wala!</p>
+To install using <a href="http://brew.sh/">Homebrew</a>, simply run <code>brew install macvim</code>
+Once installed, to open MacVim from your directory in your terminal, simply enter <code>mvim</code> and a new window will appear. Wala!</p>
 <h2>Navigation</h2><p>The power of VIM is the ability to control movement with minimal movement of your fingers.
 Thus, the following letters are used for moving through the file:</p>
 <ul>
@@ -84,12 +85,12 @@ Here are some useful commands:</p>
 <p><strong>Items</strong></p>
 <p>Here are a list of items you can pair the above commands with:</p>
 <ul>
-<li><code>w</code>- takes action on the the word.<ul>
+<li><code>w</code> takes action on the the word.<ul>
 <li>Note: if the cursor is placed in the middle of the word, the action will not apply to the characters before the cursor</li>
 <li>Example: <code>dw</code> - delete word!</li>
 </ul>
 </li>
-<li><code>i[surrounding character(&quot;, &#39;,  ) or (, ] or [),  or &#39;p&#39;]</code><ul>
+<li><code>i[surrounding character(&quot;, &#39;,  ) or (, ] or [),  or &#39;p&#39;]</code> takes action on items surrounded by a character<ul>
 <li>Examples:<ul>
 <li><code>yi&quot;</code>- yank in quotations (&quot;)</li>
 <li><code>yip</code> - yank in paragraph</li>
@@ -98,6 +99,100 @@ Here are some useful commands:</p>
 </ul>
 </li>
 </ul>
-<h2>Customization</h2><p>To be continued..
-Talk about .vimrc and all the magic there
-Introduce Plugin managers and some basic really important plugins.</p></div><div class="footer-container"><div class="footer"><div>Copyright @ 2016</div><div>The Early Career Toolkit is protected by the MIT license.</div><div>All Rights Reserved</div></div></div></div></body></html>
+<h2>Customization</h2><p>The beauty of Vim is it&#39;s flexibility.</p>
+<p>In order to customize, create a <code>.vimrc</code> file in your root directory.
+Here are some basic customization settings you can add in there:</p>
+<p><em>Note: lines/text starting in <code>&quot;</code> are comments</em>
+*Note: feel free to customize these values to your needs! this is only a sample.</p>
+<pre><code>&quot;basic settings
+
+syntax enable
+set background=light
+colorscheme solarized
+set guifont=Monaco:h18
+
+&quot;miscellaneous settings
+set noswapfile
+set nobackup &quot;by default, vim creates backup files of your changes.
+set nowrap
+set number &quot;display line numbers
+set cursorline &quot;highlight the line cursor lies on
+set cursorcolumn &quot;highlight the column cursor lies on
+:set expandtab &quot;enters space characters when tab is pressed
+:set tabstop=2 &quot;spaces per tab
+:set shiftwidth=2 &quot;spaces per indentation
+
+&quot;key remappings
+let mapleader = &quot;\&lt;Space&gt;&quot; &quot;define your leader (what will trigger commands -- utilized in plugins below)
+</code></pre><h2>Enhance Usage with Plugins</h2><p>Many powerful plugins have been created that will greatly enhace Vim&#39;s usability.
+Below will be a few staples that will be necessary for navigating and searching through your files.
+However, there are tons of plugins out there on the interwebs. Build the editor of your dreams!</p>
+<p><strong>Plugin Managers</strong></p>
+<p>In order to utilize these wonderful plugins, you will need a Plugin Manager.</p>
+<p>The following are known plugin managers:</p>
+<ul>
+<li><a href="https://github.com/junegunn/vim-plug">Vim Plug</a> - Easy and Minimalist Plugin Manager (see readme for installation instructions)</li>
+</ul>
+<p><strong>Plugins</strong></p>
+<p>The following are basic extremely useful plugins:</p>
+<ul>
+<li><p><a href="https://github.com/scrooloose/nerdtree">NerdTree</a> - file tree explorer which you can manipulate with vim commands</p>
+<ul>
+<li><p><strong>Install using Plug</strong>:</p>
+<ul>
+<li><p>Enter the following in your <code>.vimrc</code> file:</p>
+<pre><code>call plug#begin(&#39;~/.vim/plugged&#39;)
+  Plug &#39;scrooloose/nerdtree&#39;, { &#39;on&#39;: &#39;NERDTreeToggle&#39; }
+call plug#end()
+
+&quot;key remappings
+let mapleader = &quot;\&lt;Space&gt;&quot;
+nnoremap &lt;Leader&gt;t :NERDTreeToggle&lt;CR&gt;
+</code></pre></li>
+<li>Enter <code>:PlugInstall</code> in your <code>.vimrc</code> editor</li>
+<li>When you open a new window, hit <leader>t and NerdTree will open!</leader></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a href="https://github.com/ggreer/the_silver_searcher">Silver Searcher</a> and <a href="https://github.com/rking/ag.vim">Ag</a> - Allows for grepping or searching files for matching text.</p>
+<ul>
+<li><p><strong>Install using Plug</strong>:</p>
+<ul>
+<li>Insert the following plugs in your <code>.vimrc</code> file inside your plug block:<ul>
+<li><code>Plug &#39;ggreer/the_silver_searcher&#39;</code></li>
+<li><code>Plug &#39;rking/ag.vim&#39;</code></li>
+</ul>
+</li>
+<li><p>Insert the following script in your <code>.vimrc</code>:</p>
+<pre><code>  &quot; The Silver Searcher
+  if executable(&quot;ag&quot;)
+    set grepprg=ag\ --nogroup\ --nocolor
+    let g:ctrlp_user_command = &#39;ag %s -l --nocolor -g &quot;&quot;&#39;
+  endif
+</code></pre></li>
+<li><p>Enter <code>:PlugInstall</code> in your <code>.vimrc</code> editor</p>
+</li>
+<li>When you open a new window, enter the following command:<ul>
+<li><code>:Ag &quot;daylight come and me wanna go home&quot;&lt;Enter&gt;</code></li>
+</ul>
+</li>
+<li>A new pane will appear with the results of your search</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a href="https://github.com/kien/ctrlp.vim">CtrlP</a> - Fuzzy file finder (allows you to open files by entering name)</p>
+<ul>
+<li>Installation Insturctions are <a href="http://kien.github.io/ctrlp.vim/#installation">here</a></li>
+<li><p>Map the command to your leader for easy access in your <code>.vimrc</code>:</p>
+<pre><code>&quot;key remappings
+let mapleader = &quot;\&lt;Space&gt;&quot;
+nnoremap &lt;Leader&gt;f :CtrlP&lt;CR&gt;
+</code></pre></li>
+<li><p>When you open a new window, enter <leader>f, and a new pane will appear allowing you to fuzzy file search</leader></p>
+</li>
+<li>If your file isn&#39;t appearing, you may need to re-index your files by hitting <code>F5</code></li>
+</ul>
+</li>
+</ul></div><div class="footer-container"><div class="footer"><div>Copyright @ 2016</div><div>The Early Career Toolkit is protected by the MIT license.</div><div>All Rights Reserved</div></div></div></div></body></html>
