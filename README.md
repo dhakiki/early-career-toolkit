@@ -39,7 +39,7 @@ This toolkit will cover the following topics:
 
  - [Focus on a Software Stack](content/stack_focus.md)
  - [Customize a Productive Coding Environment](content/customize_your_environment.md)
- - Best Coding Practices
+ - [Best Coding Practices](content/best_coding_practices.md)
  - Mentorship Guide
 
 Click on the first link to start your journey. Live long and prosper!
