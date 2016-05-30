@@ -43,3 +43,10 @@ This toolkit will cover the following topics:
  - [Mentorship Guide](content/mentorship_guide.md)
 
 Click on the first link to start your journey. Live long and prosper!
+
+Contributing
+----
+
+Found a typo or disagree with a topic in this toolkit? [Open an issue](https://github.com/dhakiki/early-career-toolkit/issues)!
+Have something to add? [Create a pull request](https://help.github.com/articles/using-pull-requests/) for review!
+Check out our [Contributing guide on Github](https://github.com/dhakiki/blob/master/CONTRIBUTING.md) to start growing our knowledge-base.
