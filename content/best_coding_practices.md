@@ -47,11 +47,15 @@ You are getting more rapid feedback as you are building, so if there was a bette
 In addition, your intentions are clear per pull request so your audience knows exactly what problem you are trying to solve.
 You'll also feel like a rockstar because the faster features are rolling in, the sooner your pups can post their barks in privacy.
 
-A good prerequisite to incremental development is good product management that has organized tasks as so.
-Communication of feature developments typically happens on task management tools like JIRA, Pivotal, Github Issues, etc. Feature is ready to be picked up if the related ticket has the following:
+** Nice-to-have: Product Management**
 
-- a well defined feature with related screenshots
-- *acceptance criteria* - how you know you have succeeded in building a feature.
+A good prerequisite to incremental development is good product management that has organized tasks incrementally which allows for synchronized building.
+Communication of feature developments typically happens on task management tools like JIRA, Pivotal, Github Issues, etc.
+
+A feature is ready to be picked up if the related ticket has the following:
+
+* a well defined feature with related screenshots
+* *acceptance criteria* - how you know you have succeeded in building a feature.
 
 You may not have a product manager on board providing these things for you. If that is the case, don't just jump right into the feature.
 First gather the required information you feel the ticket is missing, apply the exercise above to your feature to figure out a game plan, then go for it!
