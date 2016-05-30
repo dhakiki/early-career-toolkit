@@ -2,25 +2,27 @@ Best Coding Practices
 --
 
 As you embark into your first career and you begin writing code in your first project, there are three factors that change:
-  1) life span
-  2) code audience size
-  3) definition of success
+
+1. life span
+2. code audience size
+3. definition of success
 
 As a student, the timeline of the software you were building was finite (one month, a quarter, a semester).
 In addition, the pool of people interfacing with your code was small (teammates and graders).
 Your definition of success was, in addition to something cool you can show off to your friends, was an A in the course.
-When you graduate, all three of these factors change drastically. Software projects have a far larger timeline.
+
+When you enter the industry, all three of these factors change drastically. Software projects have a far larger timeline.
 As a result, not only will your team [which, is probably larger] be interfacing with your code but future developers will too.
 Whether the product you are working on is live or if it is an internal project, your definition of success is now to build a stable product.
 In order to have more accountability and responsibility in larger features, everything you build needs to be stable.
 
 This section will cover two main tools that will help you adjust to this new landscape:
 
-  * The Art of Incremental Development
-  * Test Driven Development
+* The Art of Incremental Development
+* Test Driven Development
 
 The Art of Incremental Development
--
+--
 
 Now that we have established that you are coding to a greater audience, you will need to tailor yourself to their needs.
 It is standard to have teammates review each other's features through pull requests prior to merging them in. Now these other developers will be working on
@@ -52,7 +54,7 @@ You may not have a product manager on board providing these things for you. If t
 First gather the required information you feel the ticket is missing, apply the exercise above to your feature to figure out a game plan, then go for it!
 
 Test Driven Development
--
+--
 
 Let's get more in to the specifics of development. As your definition of success is building a stable feature, so too is it to not break the other features!
 That's why tests exist and a run against each merge! They make sure your change doesn't break anything else.
@@ -64,9 +66,11 @@ But as the name 'Test Driven Development' implies, you may wonder.. why tests fi
 Kevin, VP of Engineering at Originate, clearly explains why in the following [blog post](http://www.originate.com/stories/tdd-is-bs-star-star):
 
 ```
-It is completely plausible to reflect upfront about what I’m going to build – and to write down these thoughts – before starting to build anything serious, costly, and/or sizeable. Especially when working within a team.
+It is completely plausible to reflect upfront about what I’m going to build – and to write down these thoughts – before
+starting to build anything serious, costly, and/or sizeable. Especially when working within a team.
 
-It is similarly intuitive that starting to think about these specifications – or writing them down – after a product has already been built makes very little sense, provides very little benefit to the development process, and is actually more a hassle than useful at that point. Specifications need to be defined, agreed upon, and considered before we build the actual system.
+It is similarly intuitive that starting to think about these specifications – or writing them down – after a product has
+already been built makes very little sense, provides very little benefit to the development process, and is actually more a hassle than useful at that point. Specifications need to be defined, agreed upon, and considered before we build the actual system.
 ```
 
 If well-written, these specifications can naturally serve as documentation for usage which can prove to be extremely valuable for other engineers.
