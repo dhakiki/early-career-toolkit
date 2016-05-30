@@ -27,18 +27,21 @@ The Art of Incremental Development
 Now that we have established that you are coding to a greater audience, you will need to tailor yourself to their needs.
 It is standard to have teammates review each other's features through pull requests prior to merging them in. Now these other developers will be working on
 their own features in addition to reviewing other teammates codes. The hardest pull request to review is one with large file changes.
-While waiting untill you are feature complete before you submit your code for review sounds like the obviously right thing to do, there are a few drawbacks to that approach.
+While waiting until you are feature complete before you submit your code for review sounds like the obviously right thing to do, there are a few drawbacks to that approach.
+
 First off, you will be behind on changes, some of which may require rework on your own feature.
 Second off, as your definition of success is now stability, the smaller your changes are, the easier you can guarantee that you will succeed.
 Lastly, reviewing a long PR is hard and is more prone to missing mistakes and issues.
 
+*Example: Facebook for Dogs*
+
 Let's use a simple example to demonstrate this approach. Say, you're working on Facebook for dogs and you need to build out two configuration options that allow pups to set their privacy preferences and set their name tag.
 A good progression of pull requests for this feature would be:
 
-1) Adding the Settings option in the appropriate location and showing two unclickable options (with appropriate tests)
-2) Enabling the Privacy Preferences option and building the form for the options
-3) Enabling the submit action and handling the submission (along with the appropriate tests)
-4) Enabling the Name Settings option and handling the submission (along with the appropriate tests)
+1. Adding the Settings option in the appropriate location and showing two unclickable options (with appropriate tests)
+2. Enabling the Privacy Preferences option and building the form for the options
+3. Enabling the submit action and handling the submission (along with the appropriate tests)
+4. Enabling the Name Settings option and handling the submission (along with the appropriate tests)
 
 You are getting more rapid feedback as you are building, so if there was a better way of implementing that modal, you know earlier on.
 In addition, your intentions are clear per pull request so your audience knows exactly what problem you are trying to solve.
@@ -74,6 +77,8 @@ already been built makes very little sense, provides very little benefit to the 
 ```
 
 If well-written, these specifications can naturally serve as documentation for usage which can prove to be extremely valuable for other engineers.
+
+*Example: Facebook for Dogs*
 
 Let's demonstrate by going back to the settings feature for our Facebook for dogs.
 There are multiple testing frameworks available depending on what stack you are building in.
