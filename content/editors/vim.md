@@ -185,10 +185,26 @@ The following are basic extremely useful plugins:
     * Enter `:PlugInstall` in your `.vimrc` editor
     * When you open a new window, hit <Leader>t and NerdTree will open!
   
+* [NerdTree](https://github.com/scrooloose/nerdtree) - file tree explorer which you can manipulate with vim commands
+
+  * **Install using Plug**:
+    * Enter the following in your `.vimrc` file:
+      ```
+      call plug#begin('~/.vim/plugged')
+        Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+      call plug#end()
+
+      "key remappings
+      let mapleader = "\<Space>"
+      nnoremap <Leader>t :NERDTreeToggle<CR>
+      ```
+    * Enter `:PlugInstall` in your `.vimrc` editor
+    * When you open a new window, hit <Leader>t and NerdTree will open!
+
 * [Silver Searcher](https://github.com/ggreer/the_silver_searcher) and [Ag](https://github.com/rking/ag.vim) - Allows for grepping or searching files for matching text.
 
   * **Install using Plug**:
-    * Insert the following plugs in your `.vimrc` file under your plug block
+    * Insert the following plugs in your `.vimrc` file under your plug block:
       ```
       Plug 'ggreer/the_silver_searcher'
       Plug 'rking/ag.vim'
