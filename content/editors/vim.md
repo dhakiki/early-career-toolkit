@@ -158,6 +158,7 @@ Below will be a few staples that will be necessary for navigating and searching 
 However, there are tons of plugins out there on the interwebs. Build the editor of your dreams!
 
 **Plugin Managers**
+
 In order to utilize these wonderful plugins, you will need a Plugin Manager.
 
 The following are known plugin managers:
