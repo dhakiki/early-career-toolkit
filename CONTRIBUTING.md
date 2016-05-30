@@ -16,7 +16,7 @@ Here are some tips to get yourself set up locally:
 File Structure
 -----
 
-* the `contents/` directory houses the compiled files for the `gh-pages` site.
+* the `src/` directory houses the compiled files for the `gh-pages` site and doesn't need to be touched.
 * modifications on the README.md as well as anything in the `content/` directory will publish.
 * NOTE: all new content should be in the `content/` directory
 
