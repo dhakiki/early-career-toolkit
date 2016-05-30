@@ -6,7 +6,7 @@ As you embark into your first career and you begin writing code in your first pr
   2) code audience size
   3) definition of success
 
-As a student in college, the timeline of the software you were building was finite (one month, a quarter, a semester).
+As a student, the timeline of the software you were building was finite (one month, a quarter, a semester).
 In addition, the pool of people interfacing with your code was small (teammates and graders).
 Your definition of success was, in addition to something cool you can show off to your friends, was an A in the course.
 When you graduate, all three of these factors change drastically. Software projects have a far larger timeline.
@@ -14,11 +14,10 @@ As a result, not only will your team [which, is probably larger] be interfacing 
 Whether the product you are working on is live or if it is an internal project, your definition of success is now to build a stable product.
 In order to have more accountability and responsibility in larger features, everything you build needs to be stable.
 
-This section will cover the three key tools in adjusting to this new landscape:
+This section will cover two main tools that will help you adjust to this new landscape:
 
   * The Art of Incremental Development
   * Test Driven Development
-  * Source Control
 
 The Art of Incremental Development
 -
@@ -31,11 +30,11 @@ First off, you will be behind on changes, some of which may require rework on yo
 Second off, as your definition of success is now stability, the smaller your changes are, the easier you can guarantee that you will succeed.
 Lastly, reviewing a long PR is hard and is more prone to missing mistakes and issues.
 
-Let's use a simple example to demonstrate this approach. Say, you're working on Facebook for dogs and you need to build a settings modal that allows pups to set their privacy preferences and set their name tag
+Let's use a simple example to demonstrate this approach. Say, you're working on Facebook for dogs and you need to build out two configuration options that allow pups to set their privacy preferences and set their name tag.
 A good progression of pull requests for this feature would be:
 
 1) Adding the Settings option in the appropriate location and showing two unclickable options (with appropriate tests)
-2) Enabling the privacy preferences link and building the form for the options
+2) Enabling the Privacy Preferences option and building the form for the options
 3) Enabling the submit action and handling the submission (along with the appropriate tests)
 4) Enabling the Name Settings option and handling the submission (along with the appropriate tests)
 
@@ -71,3 +70,54 @@ It is similarly intuitive that starting to think about these specifications – 
 ```
 
 If well-written, these specifications can naturally serve as documentation for usage which can prove to be extremely valuable for other engineers.
+
+Let's demonstrate by going back to the settings feature for our Facebook for dogs.
+There are multiple testing frameworks available depending on what stack you are building in.
+These features are written in [Gherkin](https://cucumber.io/docs/reference), which is a Domain Specific Language that lets you describe software's behaviour without detailing how that behaviour is implemented.
+A good set of feature tests for this task would be:
+
+```gherkin
+Scenario: Viewing the Settings Options
+  Given I am logged in
+  When I select the settings option
+  Then I see the following options:
+    | OPTION              |
+    | Privacy Preferences |
+    | Name Settings       |
+
+
+Scenario: Viewing the Privacy Preferences Options
+  Given I am logged In
+  And I select the settings option
+  And I click on the "Privacy Preferences" link
+  When I expand the privacy dropdown
+  Then I see the following options:
+    | OPTION            |
+    | Friends Only      |
+    | Public            |
+    | Friends Except... |
+    | Custom            |
+
+
+Scenario: Configuring Privacy Settings to Friends Only
+  Given I am logged In
+  And I select the settings option
+  And I click on the "Privacy Preferences" link
+  When I select the "Friends Only" in the privacy dropdown
+  And I click the button 'Save'
+  Then new posts' privacy dropdown should be defaulted to "Friends Only"
+
+```
+
+Why is this so powerful? Product owners can review these scenarios and validate the user interaction prior to development.
+The sooner the interaction gets nailed down, the less iterations you will need to make.
+These tests will all fail, and each of your PRs, you are working toward making them pass.
+
+Another benefit to having these tests is that they protect your feature from future harm.
+As the three factors-- code lifespan, audience size, and definiton of success-- have changed,
+you may have other contributors who may make changes that affect your features.
+With these tests now running every push, they will be informed immediately and your feature stays safe.
+Your definition of success is to have working features.
+
+Don't procrastinate on them and take the opportunity after you've built it to write a few edge cases and try to break your own feature.
+The fewer bugs you create, the less technical debt you will generate!
