@@ -218,10 +218,3 @@ The following are basic extremely useful plugins:
 
   * When you open a new window, enter <Leader>f, and a new pane will appear allowing you to fuzzy file search
   * If your file isn't appearing, you may need to re-index your files by hitting `F5`
-
-
-
-
-To be continued..
-Talk about .vimrc and all the magic there
-Introduce Plugin managers and some basic really important plugins.
