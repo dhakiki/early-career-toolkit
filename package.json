@@ -2,7 +2,8 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "preview": "$(npm bin)/harp server src",
+    "preview": "./scripts/preview.sh",
+    "clear-preview": "./scripts/clear-preview.sh",
     "compile": "npm run clean && $(npm bin)/harp compile src dist",
     "publish": "npm run compile && bin/publish",
     "clean": "rm -rf ./dist"
