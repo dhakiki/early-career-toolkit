@@ -1,9 +1,9 @@
 Contributing
 ======
 
-In an effort to keep readers up-to-date with the greatest tip,
-I would love to have more people contribute to this knowledgebase.
-I originally started this project as a way to give back my knowledge to people outside of my reach.
+In an effort to keep readers up-to-date with the greatest tips,
+I would love to have more people contribute to this knowledge base.
+I originally started this project as a way to give back my knowledge to people within and outside my reach.
 
 The more knowledge we share with one another, the more effective this initiative is!
 
@@ -18,7 +18,7 @@ File Structure
 
 * the `contents/` directory houses the compiled files for the `gh-pages` site.
 * modifications on the README.md as well as anything in the `content/` directory will publish.
-* NOTE: all new content should be in the content directory
+* NOTE: all new content should be in the `content/` directory
 
 Preview
 ----
@@ -35,6 +35,3 @@ When merging approved PRs:
 * Delete your branch post-merge
 
 Every merge to master will automatically publish to the gh-pages website.
-
-Happy coding!
-
