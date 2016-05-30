@@ -47,7 +47,7 @@ You are getting more rapid feedback as you are building, so if there was a bette
 In addition, your intentions are clear per pull request so your audience knows exactly what problem you are trying to solve.
 You'll also feel like a rockstar because the faster features are rolling in, the sooner your pups can post their barks in privacy.
 
-** Nice-to-have: Product Management**
+**Nice-to-have: Product Management**
 
 A good prerequisite to incremental development is good product management that has organized tasks incrementally which allows for synchronized building.
 Communication of feature developments typically happens on task management tools like JIRA, Pivotal, Github Issues, etc.
