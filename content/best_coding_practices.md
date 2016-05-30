@@ -111,13 +111,11 @@ Scenario: Configuring Privacy Settings to Friends Only
 
 Why is this so powerful? Product owners can review these scenarios and validate the user interaction prior to development.
 The sooner the interaction gets nailed down, the less iterations you will need to make.
-These tests will all fail, and each of your PRs, you are working toward making them pass.
+Once they're approved, you will have a solid foundation for incremental development -- make each scenario pass.
 
 Another benefit to having these tests is that they protect your feature from future harm.
-As the three factors-- code lifespan, audience size, and definiton of success-- have changed,
-you may have other contributors who may make changes that affect your features.
+As code lifespan is now longer, you may have other contributors who may make changes that affect your features.
 With these tests now running every push, they will be informed immediately and your feature stays safe.
-Your definition of success is to have working features.
 
 Don't procrastinate on them and take the opportunity after you've built it to write a few edge cases and try to break your own feature.
 The fewer bugs you create, the less technical debt you will generate!
