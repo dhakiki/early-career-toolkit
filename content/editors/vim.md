@@ -193,17 +193,6 @@ The following are basic extremely useful plugins:
       Plug 'ggreer/the_silver_searcher'
       Plug 'rking/ag.vim'
       ```
-    * Enter `:PlugInstall` in your `.vimrc` editor
-    * When you open a new window, hit <Leader>t and NerdTree will open!
-
-* [Silver Searcher](https://github.com/ggreer/the_silver_searcher) and [Ag](https://github.com/rking/ag.vim) - Allows for grepping or searching files for matching text.
-
-  * **Install using Plug**:
-    * Insert the following plugs in your `.vimrc` file under your plug block:
-      ```
-      Plug 'ggreer/the_silver_searcher'
-      Plug 'rking/ag.vim'
-      ```
     * Insert the following script in your `.vimrc`:
       ```
       " The Silver Searcher
@@ -213,7 +202,10 @@ The following are basic extremely useful plugins:
       endif
       ```
     * Enter `:PlugInstall` in your `.vimrc` editor
-    * When you open a new window, enter the following command: `:Ag "daylight come and me wanna go home"<Enter>
+    * When you open a new window, enter the following command:
+      ```
+      :Ag "daylight come and me wanna go home"<Enter>
+      ```
     * A new pane will appear with the results of your search
 
 * [CtrlP](https://github.com/kien/ctrlp.vim) - Fuzzy file finder (allows you to open files by entering name)
