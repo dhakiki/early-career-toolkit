@@ -192,13 +192,13 @@ The following are basic extremely useful plugins:
       Plug 'ggreer/the_silver_searcher'
       Plug 'rking/ag.vim'
       ```
-    * Insert the following executable to your `.vimrc`:
+    * Insert the following script in your `.vimrc`:
       ```
-        " The Silver Searcher
-        if executable("ag")
-          set grepprg=ag\ --nogroup\ --nocolor
-          let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-        endif
+      " The Silver Searcher
+      if executable("ag")
+        set grepprg=ag\ --nogroup\ --nocolor
+        let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+      endif
       ```
     * Enter `:PlugInstall` in your `.vimrc` editor
     * When you open a new window, enter the following command: `:Ag "daylight come and me wanna go home"<Enter>
