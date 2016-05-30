@@ -77,7 +77,8 @@ It is completely plausible to reflect upfront about what I’m going to build �
 starting to build anything serious, costly, and/or sizeable. Especially when working within a team.
 
 It is similarly intuitive that starting to think about these specifications – or writing them down – after a product has
-already been built makes very little sense, provides very little benefit to the development process, and is actually more a hassle than useful at that point. Specifications need to be defined, agreed upon, and considered before we build the actual system.
+already been built makes very little sense, provides very little benefit to the development process, and is actually more
+a hassle than useful at that point. Specifications need to be defined, agreed upon, and considered before we build the actual system.
 ```
 
 If well-written, these specifications can naturally serve as documentation for usage which can prove to be extremely valuable for other engineers.
