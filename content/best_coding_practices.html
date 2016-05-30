@@ -1,11 +1,13 @@
-<!DOCTYPE html><html><head><script src="../"></script><script src="2"></script><link rel="stylesheet" href="../css/main.css"></head><body><div class="banner"><div class="banner-header"><h3>Early Career Toolkit</h3></div><div class="banner-actions"><a href="https://github.com/dhakiki/early-career-toolkit" target="_blank" class="banner-action github"></a></div></div><div class="content-container"><div class="content"><h2>Best Coding Practices</h2><p>As you embark into your first career and you begin writing code in your first project, there are three factors that change:
-  1) life span
-  2) code audience size
-  3) definition of success</p>
+<!DOCTYPE html><html><head><script src="../"></script><script src="2"></script><link rel="stylesheet" href="../css/main.css"></head><body><div class="banner"><div class="banner-header"><h3>Early Career Toolkit</h3></div><div class="banner-actions"><a href="https://github.com/dhakiki/early-career-toolkit" target="_blank" class="banner-action github"></a></div></div><div class="content-container"><div class="content"><h2>Best Coding Practices</h2><p>As you embark into your first career and you begin writing code in your first project, there are three factors that change:</p>
+<ol>
+<li>life span</li>
+<li>code audience size</li>
+<li>definition of success</li>
+</ol>
 <p>As a student, the timeline of the software you were building was finite (one month, a quarter, a semester).
 In addition, the pool of people interfacing with your code was small (teammates and graders).
-Your definition of success was, in addition to something cool you can show off to your friends, was an A in the course.
-When you graduate, all three of these factors change drastically. Software projects have a far larger timeline.
+Your definition of success was, in addition to something cool you can show off to your friends, was an A in the course.</p>
+<p>When you enter the industry, all three of these factors change drastically. Software projects have a far larger timeline.
 As a result, not only will your team [which, is probably larger] be interfacing with your code but future developers will too.
 Whether the product you are working on is live or if it is an internal project, your definition of success is now to build a stable product.
 In order to have more accountability and responsibility in larger features, everything you build needs to be stable.</p>
@@ -14,45 +16,50 @@ In order to have more accountability and responsibility in larger features, ever
 <li>The Art of Incremental Development</li>
 <li>Test Driven Development</li>
 </ul>
-<p>The Art of Incremental Development
--</p>
-<p>Now that we have established that you are coding to a greater audience, you will need to tailor yourself to their needs.
+<h2>The Art of Incremental Development</h2><p>Now that we have established that you are coding to a greater audience, you will need to tailor yourself to their needs.
 It is standard to have teammates review each other&#39;s features through pull requests prior to merging them in. Now these other developers will be working on
 their own features in addition to reviewing other teammates codes. The hardest pull request to review is one with large file changes.
-While waiting untill you are feature complete before you submit your code for review sounds like the obviously right thing to do, there are a few drawbacks to that approach.
-First off, you will be behind on changes, some of which may require rework on your own feature.
+While waiting until you are feature complete before you submit your code for review sounds like the obviously right thing to do, there are a few drawbacks to that approach.</p>
+<p>First off, you will be behind on changes, some of which may require rework on your own feature.
 Second off, as your definition of success is now stability, the smaller your changes are, the easier you can guarantee that you will succeed.
 Lastly, reviewing a long PR is hard and is more prone to missing mistakes and issues.</p>
+<p><strong>Example: Facebook for Dogs</strong></p>
 <p>Let&#39;s use a simple example to demonstrate this approach. Say, you&#39;re working on Facebook for dogs and you need to build out two configuration options that allow pups to set their privacy preferences and set their name tag.
 A good progression of pull requests for this feature would be:</p>
-<p>1) Adding the Settings option in the appropriate location and showing two unclickable options (with appropriate tests)
-2) Enabling the Privacy Preferences option and building the form for the options
-3) Enabling the submit action and handling the submission (along with the appropriate tests)
-4) Enabling the Name Settings option and handling the submission (along with the appropriate tests)</p>
+<ol>
+<li>Adding the Settings option in the appropriate location and showing two unclickable options (with appropriate tests)</li>
+<li>Enabling the Privacy Preferences option and building the form for the options</li>
+<li>Enabling the submit action and handling the submission (along with the appropriate tests)</li>
+<li>Enabling the Name Settings option and handling the submission (along with the appropriate tests)</li>
+</ol>
 <p>You are getting more rapid feedback as you are building, so if there was a better way of implementing that modal, you know earlier on.
 In addition, your intentions are clear per pull request so your audience knows exactly what problem you are trying to solve.
 You&#39;ll also feel like a rockstar because the faster features are rolling in, the sooner your pups can post their barks in privacy.</p>
-<p>A good prerequisite to incremental development is good product management that has organized tasks as so.
-Communication of feature developments typically happens on task management tools like JIRA, Pivotal, Github Issues, etc. Feature is ready to be picked up if the related ticket has the following:</p>
+<p><strong>Nice-to-have: Product Management</strong></p>
+<p>A good prerequisite to incremental development is good product management that has organized tasks incrementally which allows for synchronized building.
+Communication of feature developments typically happens on task management tools like JIRA, Pivotal, Github Issues, etc.</p>
+<p>A feature is ready to be picked up if the related ticket has the following:</p>
 <ul>
 <li>a well defined feature with related screenshots</li>
 <li><em>acceptance criteria</em> - how you know you have succeeded in building a feature.</li>
 </ul>
 <p>You may not have a product manager on board providing these things for you. If that is the case, don&#39;t just jump right into the feature.
 First gather the required information you feel the ticket is missing, apply the exercise above to your feature to figure out a game plan, then go for it!</p>
-<p>Test Driven Development
--</p>
-<p>Let&#39;s get more in to the specifics of development. As your definition of success is building a stable feature, so too is it to not break the other features!
+<h2>Test Driven Development</h2><p>Let&#39;s get more in to the specifics of development. As your definition of success is building a stable feature, so too is it to not break the other features!
 That&#39;s why tests exist and a run against each merge! They make sure your change doesn&#39;t break anything else.
 Writing code in a repository with no tests is truly a nightmare. May you never experience it.
 In university, as the life span of code is shorter, the importance of testing may not be covered as well as it should.
 That is why writing tests that surround a feature you write is basically giving your feature insurance that it does function properly and will regardless of future changes.</p>
 <p>But as the name &#39;Test Driven Development&#39; implies, you may wonder.. why tests first?
 Kevin, VP of Engineering at Originate, clearly explains why in the following <a href="http://www.originate.com/stories/tdd-is-bs-star-star">blog post</a>:</p>
-<pre><code>It is completely plausible to reflect upfront about what I’m going to build – and to write down these thoughts – before starting to build anything serious, costly, and/or sizeable. Especially when working within a team.
+<pre><code>It is completely plausible to reflect upfront about what I’m going to build – and to write down these thoughts – before
+starting to build anything serious, costly, and/or sizeable. Especially when working within a team.
 
-It is similarly intuitive that starting to think about these specifications – or writing them down – after a product has already been built makes very little sense, provides very little benefit to the development process, and is actually more a hassle than useful at that point. Specifications need to be defined, agreed upon, and considered before we build the actual system.
+It is similarly intuitive that starting to think about these specifications – or writing them down – after a product has
+already been built makes very little sense, provides very little benefit to the development process, and is actually more
+a hassle than useful at that point. Specifications need to be defined, agreed upon, and considered before we build the actual system.
 </code></pre><p>If well-written, these specifications can naturally serve as documentation for usage which can prove to be extremely valuable for other engineers.</p>
+<p><strong>Example: Facebook for Dogs</strong></p>
 <p>Let&#39;s demonstrate by going back to the settings feature for our Facebook for dogs.
 There are multiple testing frameworks available depending on what stack you are building in.
 These features are written in <a href="https://cucumber.io/docs/reference">Gherkin</a>, which is a Domain Specific Language that lets you describe software&#39;s behaviour without detailing how that behaviour is implemented.
