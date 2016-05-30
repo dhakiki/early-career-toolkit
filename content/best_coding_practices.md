@@ -99,6 +99,7 @@ Scenario: Viewing the Privacy Preferences Options
     | Public            |
     | Friends Except... |
     | Custom            |
+  And the "Save" button is disabled
 
 
 Scenario: Configuring Privacy Settings to Friends Only
@@ -117,6 +118,7 @@ Scenario: Changing Name Tag to Existing Name Fails
   When I enter the name "Boo" into the "name" field
   And I click the button "Check Availability"
   Then I see the error "Error. Name already Taken."
+  And the "Save" button is disabled
 
 ```
 
