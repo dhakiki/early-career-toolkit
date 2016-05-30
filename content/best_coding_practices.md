@@ -33,7 +33,7 @@ First off, you will be behind on changes, some of which may require rework on yo
 Second off, as your definition of success is now stability, the smaller your changes are, the easier you can guarantee that you will succeed.
 Lastly, reviewing a long PR is hard and is more prone to missing mistakes and issues.
 
-*Example: Facebook for Dogs*
+**Example: Facebook for Dogs**
 
 Let's use a simple example to demonstrate this approach. Say, you're working on Facebook for dogs and you need to build out two configuration options that allow pups to set their privacy preferences and set their name tag.
 A good progression of pull requests for this feature would be:
@@ -78,7 +78,7 @@ already been built makes very little sense, provides very little benefit to the 
 
 If well-written, these specifications can naturally serve as documentation for usage which can prove to be extremely valuable for other engineers.
 
-*Example: Facebook for Dogs*
+**Example: Facebook for Dogs**
 
 Let's demonstrate by going back to the settings feature for our Facebook for dogs.
 There are multiple testing frameworks available depending on what stack you are building in.
