@@ -188,32 +188,34 @@ The following are basic extremely useful plugins:
 * [Silver Searcher](https://github.com/ggreer/the_silver_searcher) and [Ag](https://github.com/rking/ag.vim) - Allows for grepping or searching files for matching text.
 
   * **Install using Plug**:
-    * Insert the following plugs in your `.vimrc` file under your plug block:
+    * Insert the following plugs in your `.vimrc` file inside your plug block:
       * `Plug 'ggreer/the_silver_searcher'`
       * `Plug 'rking/ag.vim'`
     * Insert the following script in your `.vimrc`:
+
       ```
-      " The Silver Searcher
-      if executable("ag")
-        set grepprg=ag\ --nogroup\ --nocolor
-        let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-      endif
+        " The Silver Searcher
+        if executable("ag")
+          set grepprg=ag\ --nogroup\ --nocolor
+          let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+        endif
       ```
+
     * Enter `:PlugInstall` in your `.vimrc` editor
     * When you open a new window, enter the following command:
-      ```
-      :Ag "daylight come and me wanna go home"<Enter>
-      ```
+      * `:Ag "daylight come and me wanna go home"<Enter>`
     * A new pane will appear with the results of your search
 
 * [CtrlP](https://github.com/kien/ctrlp.vim) - Fuzzy file finder (allows you to open files by entering name)
   * Installation Insturctions are [here](http://kien.github.io/ctrlp.vim/#installation)
   * Map the command to your leader for easy access in your `.vimrc`:
+
     ```
     "key remappings
     let mapleader = "\<Space>"
     nnoremap <Leader>f :CtrlP<CR>
     ```
+
   * When you open a new window, enter <Leader>f, and a new pane will appear allowing you to fuzzy file search
   * If your file isn't appearing, you may need to re-index your files by hitting `F5`
 
