@@ -195,7 +195,6 @@ The following are basic extremely useful plugins:
       ```
     * Insert the following script in your `.vimrc`:
       ```
-      " The Silver Searcher
       if executable("ag")
         set grepprg=ag\ --nogroup\ --nocolor
         let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
