@@ -40,9 +40,9 @@ In fact, this relationship is tricky for most to properly maintain and grow for 
 
 A healthy mentor-mentee is one that entails the following characteristics:
 
-* recurring meetings - The more you progress in your skill, the further your mentor can guide you. Regular contact is also good to keep you aligned with your goals.
-* quality mentorship - Having a mentor with sufficient knowledge to share with you
-* concise yet efficient - Mentors are typically extremely busy -- mentees do not sought full solutions, but rather tips and pointers that direct them to the right path.
-* traction in utilization - Mentees who utilize these tips and communicate the results give mentors transparecy of their influence, making them proud and eager to share more.
+* **Recurring Meetings** - The more you progress in your skill, the further your mentor can guide you. Regular contact is also good to keep you aligned with your goals.
+* **Quality Mentorship** - Having a mentor with sufficient knowledge to share with you
+* **Concise Yet Efficient** - Mentors are typically extremely busy -- mentees do not sought full solutions, but rather tips and pointers that direct them to the right path.
+* **Traction in Utilization** - Mentees who utilize these tips and communicate the results give mentors transparecy of their influence, making them proud and eager to share more.
 
 May your quest to find a mentor be fruitful. In fact, this toolkit came about as a result of intermittently serving as a knowledge-base for people still on the search.
