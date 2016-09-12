@@ -63,7 +63,7 @@ abbr -a gsc git sync --continue
 function fish_prompt --description 'Write out the prompt'
 
   # Just calculate these once, to save a few cycles when displaying the prompt
-  
+
   if not set -q __fish_prompt_normal
       set -g __fish_prompt_normal (set_color normal)
   end
@@ -88,7 +88,17 @@ Here are some tools to help you review your changes prior to a commit:
 
 **Bash Scripting 101**
 
-(Enter Awesomeness here)
+So, you're a hipster developer and love Fish... Cool, most of us are. But, no matter what, at some point you'll need to do some Bash stuff.
+
+Scared? No need to... Check the following links (thanks @santiaro90 !) to get a grasp of some of what you'll be needing the most.
+
+- [Baby Steps with the Shell](https://slides.com/santiaro90/shell-intro-first-steps)
+- [Handle Those Files and Dirs](https://slides.com/santiaro90/shell-intro-file-management)
+- [Doing Cool Things with Text](https://slides.com/santiaro90/shell-intro-text-processing)
+- [Magic Tricks with `sed` and `awk`](#)
+- [`find`, `grep` and Where the Heck Am I Using My Cool Class?](#)
+- [Too Much Typing? Write a Script](#)
+- [More Scripting, Mate!](#)
 
 Master Window Management
 --
