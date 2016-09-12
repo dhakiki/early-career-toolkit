@@ -90,7 +90,7 @@ Here are some tools to help you review your changes prior to a commit:
 
 So, you're a hipster developer and love Fish... Cool, most of us are. But, no matter what, at some point you'll need to do some Bash stuff.
 
-Scared? No need to... Check the following links (thanks @santiaro90 !) to get a grasp of some of what you'll be needing the most.
+Scared? No need to... Check the following links (thanks [@santiaro90](https://github.com/santiaro90) !) to get a grasp of some of what you'll be needing the most.
 
 - [Baby Steps with the Shell](https://slides.com/santiaro90/shell-intro-first-steps)
 - [Handle Those Files and Dirs](https://slides.com/santiaro90/shell-intro-file-management)
