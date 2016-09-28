@@ -95,9 +95,9 @@ Scared? No need to... Check the following links (thanks [@santiaro90](https://gi
 - [Baby Steps with the Shell](https://slides.com/santiaro90/shell-intro-first-steps)
 - [Handle Those Files and Dirs](https://slides.com/santiaro90/shell-intro-file-management)
 - [Doing Cool Things with Text](https://slides.com/santiaro90/shell-intro-text-processing)
-- [Magic Tricks with `sed` and `awk`](#)
-- [`find`, `grep` and Where the Heck Am I Using My Cool Class?](#)
-- [Too Much Typing? Write a Script](#)
+- [Magic Tricks with `sed` and `awk`](https://slides.com/santiaro90/shell-intro-sed-awk)
+- [`find`, `grep` and Where the Heck Am I Using My Cool Class?](https://slides.com/santiaro90/shell-intro-find-grep)
+- [Too Much Typing? Write a Script](https://slides.com/santiaro90/shell-intro-bash-script-101)
 - [More Scripting, Mate!](#)
 
 Master Window Management
