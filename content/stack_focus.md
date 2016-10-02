@@ -1,4 +1,4 @@
-[Home](/) > Stack Focus
+[Home](../) > Stack Focus
 
 Focus on a Software Stack
 ---

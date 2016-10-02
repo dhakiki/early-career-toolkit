@@ -1,4 +1,4 @@
-[Home](/) > Mentorship Guide
+[Home](../) > Mentorship Guide
 
 Mentorship Guide
 --

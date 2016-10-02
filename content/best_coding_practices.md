@@ -1,4 +1,4 @@
-[Home](/) > Best Coding Practices
+[Home](../) > Best Coding Practices
 
 Best Coding Practices
 --
