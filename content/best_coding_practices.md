@@ -1,3 +1,5 @@
+[Home](/) > Best Coding Practices
+
 Best Coding Practices
 --
 
@@ -146,3 +148,7 @@ With these tests now running every push, they will be informed immediately and y
 
 Don't procrastinate on them and take the opportunity after you've built it to write a few edge cases and try to break your own feature.
 The fewer bugs you create, the less technical debt you will generate!
+
+[Back to Top](#top)
+<br/>
+Next up: [Mentorship Guide](mentorship_guide.md)
