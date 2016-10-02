@@ -1,3 +1,5 @@
+[Home](/) > Stack Focus
+
 Focus on a Software Stack
 ---
 
@@ -14,3 +16,7 @@ The idea here is that, in doing so, you are showing your colleagues you are capa
     Please Note: Because of the generally high learning curve when working on a new stack,
     level out your skills in your assigned stack first before taking on this extra workload.
     Otherwise, you'll burn out. And we wouldn't want that now would we?
+
+[Back to Top](#top)
+<br/>
+Next up: [Customize a Productive Coding Environment](customize_your_environment.md)

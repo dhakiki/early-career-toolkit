@@ -1,3 +1,5 @@
+[Home](/) > [Customize a Productive Coding Environment](../customize_your_environment.md) > Vim
+
 Vim
 ===
 
@@ -218,3 +220,5 @@ The following are basic extremely useful plugins:
 
   * When you open a new window, enter <Leader>f, and a new pane will appear allowing you to fuzzy file search
   * If your file isn't appearing, you may need to re-index your files by hitting `F5`
+
+[Back to Top](#top)

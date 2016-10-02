@@ -7,19 +7,24 @@ html
       -  path += '../'
     script(src = path)
     script(src = gah)
-    link(rel="stylesheet" href= path + "css/main.css")
+    link(rel="stylesheet" href= path + "css/normalize.css")
+    link(rel="stylesheet" href= path + "css/style.css")
   body
-    .banner
-      .banner-header
-        a(href="/early-career-toolkit/")
-          h3 Early Career Toolkit
-      .banner-actions
-        a.banner-action.github(href="https://github.com/dhakiki/early-career-toolkit" target = "_blank")
-    .content-container
-      .content
-        != yield
-      .footer-container
-        .footer
+    section.page-header
+      h1.project-name Early Career Toolkit
+      h2.project-tagline An Open Source knowledge base from engineers to engineers
+      a.btn(href="https://github.com/dhakiki/early-career-toolkit") View on GitHub
+      a.btn(href="https://github.com/dhakiki/early-career-toolkit/zipball/master") Download .zip
+      a.btn(href="https://github.com/dhakiki/early-career-toolkit/tarball/master") Download .tar.gz
+    section.main-content#top
+      != yield
+      footer.site-footer
+        b.site-footer-owner
+          a(href="https://github.com/dhakiki/early-career-toolkit") Early Career Toolkit
+          | &nbsp; is maintained by &nbsp;
+          a(href="https://github.com/dhakiki") dhakiki
+          | .
+        span.site-footer-credits
           div Copyright @ 2016
           div The Early Career Toolkit is protected by the MIT license.
           div All Rights Reserved
