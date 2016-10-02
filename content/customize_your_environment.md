@@ -1,4 +1,4 @@
-[Home](/) > Customize Your Environment
+[Home](../) > Customize Your Environment
 
 Customize Your Environment
 --

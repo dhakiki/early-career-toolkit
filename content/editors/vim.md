@@ -1,4 +1,4 @@
-[Home](/) > [Customize a Productive Coding Environment](../customize_your_environment.md) > Vim
+[Home](../../) > [Customize a Productive Coding Environment](../customize_your_environment.md) > Vim
 
 Vim
 ===
