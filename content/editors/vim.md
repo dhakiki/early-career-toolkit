@@ -1,4 +1,4 @@
-[Home](../../) > [Customize a Productive Coding Environment](../customize_your_environment.md) > Vim
+Back to [Customize a Productive Coding Environment](../customize_your_environment.md)
 
 Vim
 ===
@@ -7,7 +7,7 @@ According to the [vim](http://www.vim.org/) website,
 
 	Vim is a highly configurable text editor built to enable efficient text editing.
 
-The power in it's efficiency lies in the shortkeys and inline commands.
+The power in its efficiency lies in the shortkeys and inline commands.
 Learning the short keys will take some time.
 Try out this fun [game](http://vim-adventures.com/) to learn the basic commands.
 It'll remind you of 8-bit computer games from the 90s. Good times.
