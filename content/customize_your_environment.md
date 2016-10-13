@@ -3,19 +3,21 @@
 Customize Your Environment
 --
 
-Regardless of what stack you'll be on, within no time, you'll get your hands on a lot of files.
-At first, you'll live with 9 editor tabs, 5 terminal window, and three browser windows with 15 tabs each.
-Maybe you'll be ok with typing out the entire terminal commands, or using git diff to view your changes.
-You'll be fine using one Desktop Space and changing apps and tabs.
-You'll traverse through your file tree to get to that one file that needs to be updated without a problem.
+Regardless of what stack you'll be on, within no time, you'll get your hands on a lot of files!
+
+At first, you'll live with 9 editor tabs, 5 terminal windows, and 3 browser windows with 15 tabs each.
+Maybe you'll be ok with typing out the entire terminal commands, or using `git diff` to view your changes.
+You may be fine using one Desktop Space and changing apps and tabs.
+You'll traverse through your file tree to get to that one single file that needs to be updated without a problem.
+
 This section will cover ways to keep your work environment organized and efficient.
-Some of these tips are quick to jump into.. others might need some more time.
-All in all, they will all pay back in their own ways (by buying you more time and protecting your sanity).
+Some of these tips are quick to jump into...others might need some more time.
+Overall, they will all pay back in their own ways (by buying you more time and protecting your sanity).
 
 Turbo Terminal User
 -
-No matter what stack you'll be in, you'll definitely be interfacing with the Terminal (that window that makes less computer-savvy people think you're writing the next virus on).
-Wouldn't you love to use a shell that would remember your past entires and is customizable enough you can write your own aliases and write your own custom functions? Say no more!
+No matter what stack you'll be in, you'll definitely be interfacing with the Terminal (that window that makes less computer-savvy people think you're writing the next virus).
+Wouldn't you love to use a shell that would remember your past entires and is customizable enough you can write your own aliases and write your own custom functions? Well, say no more!
 
 **Fish Shell**
 
@@ -60,7 +62,8 @@ abbr -a gs git sync
 abbr -a gsa git sync --abort
 abbr -a gsc git sync --continue
 
-# The following function replaces your Fish Prompt (the text to the left of your cursor) with an abbreviated version of your current location as well as your current git branch.
+# The following function replaces your Fish Prompt (the text to the left of your cursor) 
+# with an abbreviated version of your current location as well as your current git branch.
 
 function fish_prompt --description 'Write out the prompt'
 
@@ -86,11 +89,11 @@ end
 
 Here are some tools to help you review your changes prior to a commit:
 
- - [GitX](http://gitx.frim.nl/) is for GUI lovers like myself (Only for Mac!). You can `Enable Terminal Usage` once installed and simply type `gitx` in your command line to open the tool.
+ - [GitX](http://gitx.frim.nl/) is for GUI lovers (Only for Mac!). You can `Enable Terminal Usage` once installed and simply type `gitx` in your command line to open the tool.
 
 **Bash Scripting 101**
 
-So, you're a hipster developer and love Fish... Cool, most of us are. But, no matter what, at some point you'll need to do some Bash stuff.
+So, you're a hipster developer and love Fish... Cool, most of us are. But, no matter what: at some point you'll need to do some Bash stuff.
 
 Scared? No need to... Check the following links (thanks [@santiaro90](https://github.com/santiaro90) !) to get a grasp of some of what you'll be needing the most.
 
@@ -105,17 +108,17 @@ Scared? No need to... Check the following links (thanks [@santiaro90](https://gi
 Master Window Management
 --
 
-Here are some ways you can minimize the kajillion times you use Command Tab (or the Linux Equivalent)
+Here are some ways you can minimize the kajillion times you use Command Tab (or the Linux Equivalent).
 
 **Have an Extra Monitor (or two)**
 
-This one's a given, but I didn't want to leave out the obvious.
+This one's a given, but let's not skip over the obvious.
 
 **Work in Multiple Spaces**
 
-If you don't have access to an extra monitor or two, get into the habit of using spaces on your Mac!
-Here's a link to [Apple Support](https://support.apple.com/kb/PH18757?locale=en_US) explaining how to create, edit, remove, and reorganize your spaces.
-That way, you can have one space for your IDE, another for the design comps, one for chat windows, et cetera!
+If you don't have access to an extra monitor or two, get into the habit of using Spaces on your Mac!
+Here's a link to [Apple Support](https://support.apple.com/kb/PH18757?locale=en_US) explaining how to create, edit, remove, and reorganize your Spaces.
+In this way, you can have one Space for your IDE, another for the design comps, one for chat windows, et cetera!
 
 **Window Manager Apps**
 
@@ -141,6 +144,7 @@ Here are the basic necessities that will aide in your productivity:
 There exists two configurable IDEs: Vim and EMacs. These two will require some investment of time to master and learn, but IT WILL PAY OFF. Click on the following links to learn how each of these work:
 
  - [Vim](editors/vim.md)
+ - [EMacs](http://www.gnu.org/software/emacs/tour/)
 
 [Back to Top](#top)
 <br/>
